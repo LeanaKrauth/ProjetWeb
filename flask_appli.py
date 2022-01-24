@@ -14,12 +14,15 @@ def hello(name=None):
 @app.route('/hello/cavaliers.html')
 def cavaliers(name=None):
     return render_template('cavaliers.html', name=name)
+
 @app.route('/hello/pays.html')
 def pays(name=None):
     return render_template('pays.html', name=name)
+
 @app.route('/hello/chevaux.html')
 def chevaux(name=None):
     return render_template('chevaux.html', name=name)
+
 @app.route('/hello/couples.html')
 def couples(name=None):
     return render_template('couples.html', name=name)
